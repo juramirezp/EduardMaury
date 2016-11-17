@@ -1,0 +1,268 @@
+/*Espacio raiz para la creacion de variables*/
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700');
+@import url('../bower/animate.css/animate.min.css');
+
+*{
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+html, body{
+	margin:0;
+	padding:0;
+}
+.row{
+	margin:0;
+}
+#btnMenu{
+	position:fixed;
+	z-index:2;
+	bottom:10px;
+	right:10px;
+	padding:12px;
+	background-color: rgba(29, 74, 84, 0.95);
+	color:white;
+	border-radius:100%;
+	-webkit-transform:rotate(180deg);
+	        transform:rotate(180deg);
+}
+#btnMenu:hover{
+	background-color: #1D4A54;
+	cursor:pointer;
+}
+
+
+
+/* Fin estilos header */
+
+.menu{
+	position:fixed;
+	z-index:2;
+	top:0;
+	width:100%;
+	display:none;
+	height:5em;
+	background-color:white;
+}
+
+.menu-logo{}
+
+.menu .row{
+	background-color: #1D4A54;
+}
+
+.menu-elementos{
+	position:absolute;
+}
+
+.menu-elementos .palabra{
+	width:100%;
+	text-align:center;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+
+.menu-elementos .icono{
+	width:20%;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+.menu-elementos .priIcon{
+	margin-left:20%;
+}
+
+.menu-elementos-item a{
+	color:white;
+	text-decoration:none;
+	font-size:1.2em;
+	padding:10px;
+	margin-top:20px;
+	position:relative;
+}
+
+.menu-elementos-item a:hover{
+	color:grey;
+}
+
+.menu-elementos-item a:before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 20%;
+	width: 0;
+	height: 1px;
+	width: 60%;
+	background-color: #1D4A54;
+	-webkit-animation: width 0.5s;
+	        animation: width 0.5s;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+	border-radius: 2px;
+}
+
+.menu-elementos-item a:hover:before{
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+.menu-elementos-item a .fa-chevron-circle-down{
+	display:none;
+}
+
+
+.section-info{
+	display:none;
+	background-color: #1D4A54;
+}
+
+
+.section-info .datos{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+}
+
+
+.section-info .datos-imagen-foto{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
+	max-width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius:100%;
+	margin-top:3em;
+}
+
+
+.section-info .datos-info-h1{
+	font-size:1.7em;
+}
+
+
+.section-info .datos-info-h2{
+	font-size:1.3em;
+}
+
+
+.section-info .datos-info-h3{
+	font-size:1.2em;
+}
+
+
+.section-info .datos-info-h3 a{
+	text-decoration:none;
+	color:black;
+}
+
+
+.section-info .datos-info-h3 a:hover{
+	color: grey;
+}
+
+
+@media (min-width: 48em){
+
+	#btnMenu{
+		display: none;
+	}
+
+	.menu{
+		display: inline-block;
+	}
+
+	.menu .row{
+		background-color: white;
+	}
+
+	.menu-elementos{
+		right: 20px;
+		margin-top: 1em;
+	}
+
+	.menu-elementos .palabra{
+		width: auto;
+		margin-bottom: 20px;
+		margin-top: 0;
+	}
+
+	.menu-elementos .icono{
+		width: auto;
+		margin-bottom: 0;
+	}
+
+	.menu-elementos .priIcon{
+		margin: 0;
+	}
+
+	.menu-elementos-item a{
+		color: #1D4A54;
+	}
+
+	.menu-elementos-item a .fa-chevron-circle-down{
+		display: inherit;
+	}
+
+	.section-info .datos{
+		text-align: left;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-flow: row wrap;
+		flex-flow: row wrap;
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 5em;
+		padding-bottom: 5em;
+		color: white;
+	}
+
+	.section-info .datos-imagen-foto{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-flow: row wrap;
+		flex-flow: row wrap;
+		max-width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+	}
+
+	.section-info .datos-info-h1{
+		margin: 5px;
+	}
+
+	.section-info .datos-info-h2{
+		margin: 5px;
+	}
+
+	.section-info .datos-info-h3{
+		font-size: 1.1em;
+		margin: 5px;
+	}
+
+	.section-info .datos-info-h3 a{
+		color: white;
+	}
+
+	.section-info .datos-info-h3 i{
+		padding-left: 0 !important;
+	}
+
+	.section-info .datos-info-h3 .fa-linkedin{
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+}

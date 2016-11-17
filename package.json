@@ -1,0 +1,31 @@
+{
+  "name": "cv-eduard",
+  "version": "1.0.0",
+  "description": "cv_online_de_eduard_mauri",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "flexboxgrid": "^6.3.1",
+    "fontawesome": "^4.5.0"
+  },
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "browser-sync": "^2.17.5",
+    "css-mqpacker": "^5.0.1",
+    "csswring": "^5.1.0",
+    "gulp": "^3.9.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-uncss": "^1.0.6",
+    "lost": "^7.1.0",
+    "postcss-cssnext": "^2.8.0",
+    "postcss-nested": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bitealo.cl",
+  "license": "ISC"
+}
